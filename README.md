@@ -37,7 +37,6 @@ This project focuses on customer segmentation using K-Means clustering to group 
 I segmented my customers into four distinct clusters. Career-Focused Segment (43% of Customers), Standard Segment (36% of Customers), Fewer-Opportunities Segment (12% of Customers), Well-Off Segment (9% of Customers)  
 In terms of revenue contribution:
 Career-Focused Segment drives 48% of total revenue, Standard Segment accounts for 25% of total revenue, Fewer-Opportunities Segment contributes 13% of revenue, Well-Off Segment makes up 14% of revenue.
-![image](https://github.com/user-attachments/assets/65fe9298-77ab-4c0d-85e8-33be288c39f3)
 
 The **juicy part** every segemnt has a favorited product. Career-Focused Segment contribute 36% revenue of product 4  ,  Standard Segment contribute 49% revenue of product 5 ,  Fewer-Opportunities Segment contribute 56% revenue of product 2 , Well-Off Segment contribute 40% revenue of product 5 
 
