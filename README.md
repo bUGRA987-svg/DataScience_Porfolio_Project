@@ -32,7 +32,18 @@ In its first year, CustomHub52 leveraged influencer marketing and TikTok ads as 
 This project focuses on customer segmentation using K-Means clustering to group customers based on demographic attributes such as gender, age, and income to be able to cluster customers by segments. This clustering allows easier targeting and easier to predict of purchasing behaviour. After clustering, Logistic Regression is applied to predict the probability of customer purchases on a new dataset.
 
 
-**Executive Summary**
+****Executive Summary****
+
+I segmented my customers into four distinct clusters. Career-Focused Segment (43% of Customers), Standard Segment (36% of Customers), Fewer-Opportunities Segment (12% of Customers), Well-Off Segment (9% of Customers)  
+In terms of revenue contribution:
+Career-Focused Segment drives 48% of total revenue, Standard Segment accounts for 25% of total revenue, Fewer-Opportunities Segment contributes 13% of revenue, Well-Off Segment makes up 14% of revenue.
+![image](https://github.com/user-attachments/assets/65fe9298-77ab-4c0d-85e8-33be288c39f3)
+
+The **juicy part** every segemnt has a favorited product. Career-Focused Segment contribute 36% revenue of product 4  ,  Standard Segment contribute 49% revenue of product 5 ,  Fewer-Opportunities Segment contribute 56% revenue of product 2 , Well-Off Segment contribute 40% revenue of product 5 
+
+ Using my Logistic Regression model, I analyzed the coefficients for each price point and their corresponding products, allowing me to understand what drives purchases and to what extent. I leveraged this information to calculate the Price Elasticity of Demand (PED). The results were particularly insightful—Products 2, 3, and 4 showed a PED of less than -1, indicating they are elastic. This suggests that increasing the price of these products would likely lead to a higher overall revenue, as demand would not drop significantly enough to offset the price increase.
+
+**Segments**
 
 **🔹 Career-Focused Segment (43% of Customers)**
 
@@ -91,6 +102,18 @@ Marketing Strategy Recommendations:
 *Consider offering loyalty rewards for repeat purchases to build brand affinity and increase LTV.
 
 
+
+
+**Recommendations**
+I recommende trying to change product prices as follows;
+Product_1: -20% , Product_2: 5% , Product_3: 20% , Product_4: 10%, Product_5: -10%
+
+Based on the price elasticity of products:
+![Screenshot 2025-02-14 101358](https://github.com/user-attachments/assets/1226e91d-ccf3-4422-8ff2-e17f78b1966b)
+
+
+
+
 **Project Deep-Dive**
 
 I began this project with Exploratory Data Analysis (EDA) by examining the data types, columns, and values to identify patterns and correlations. I used key methods such as .info(), .describe(), .corr(), and .head() to gain an initial understanding of the dataset. Next, I proceeded with data preprocessing. Since the dataset contained both categorical and ordinal values, I started by encoding categorical variables such as gender and marital status. I applied Label Encoding, assigning 1 and 0 to categories
@@ -119,6 +142,7 @@ However, The cluster decision isn't clear yet. To address this, I used the Silho
 
 After analyzing the scores, I found that 4 clusters provided the best balance, ensuring distinct and meaningful segmentation for this project
 
-
+Next step was the calculate Price Elasticity of Demand 
+First step was the calculate coefficient to do that I plug my X values as price points and Y values as Incidence (which is 0,1 0 is no sale 1 is sale) to the LogisticRegression model. I used multinomial multiclass which allows us to calculate multivariate regression 
 
 
