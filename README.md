@@ -14,8 +14,6 @@
 
    
 
-### 🔗 Relevant Link  
-[GitHub Repository](https://github.com/r-uiz/ByteX-Post-Pandemic-Analysis)  
 
 ### 👥 Type  
 **Stakeholder**  
